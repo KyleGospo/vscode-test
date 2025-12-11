@@ -19,3 +19,37 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ───────────────────────────────────────────────
+   Frosted-glass utility you can apply via class="frost"
+   No config changes required.
+   20px blur + 180% saturation + rounded + light transparency
+   ─────────────────────────────────────────────── */
+
+@layer components {
+  .frost {
+    @apply 
+      rounded-xl
+      bg-[rgba(255,255,255,0.6)]
+      backdrop-blur-[20px]
+      backdrop-saturate-[1.8]
+      shadow-lg;
+
+    /* ensure Safari and older browsers support */
+    backdrop-filter: blur(20px) saturate(1.8);
+    -webkit-backdrop-filter: blur(20px) saturate(1.8);
+  }
+
+  /* Optional stronger/weaker variants */
+  .frost-strong {
+    @apply bg-[rgba(255,255,255,0.75)];
+  }
+
+  .frost-subtle {
+    @apply bg-[rgba(255,255,255,0.45)];
+  }
+}
