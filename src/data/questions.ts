@@ -49,5 +49,3 @@ export const questions: string[] = [
 ];
 
 export const FREE_SPACE = "FREE SPACE";
-
-export const FREE_SPACE = "FREE SPACE";
