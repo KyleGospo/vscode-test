@@ -17,7 +17,7 @@ export function GameScreen({
   onReset,
 }: GameScreenProps) {
   return (
-    <div className="flex flex-col min-h-full bg-gray-50">
+    <div className="flex flex-col min-h-full">
       {/* Header */}
       <header className="flex items-center justify-between p-3 bg-white border-b border-gray-200">
         <button
