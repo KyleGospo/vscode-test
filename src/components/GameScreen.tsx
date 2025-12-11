@@ -19,7 +19,7 @@ export function GameScreen({
   return (
     <div className="flex flex-col min-h-full">
       {/* Header */}
-      <header className="flex items-center justify-between p-3 frost border-b border-gray-200">
+      <header className="flex items-center justify-between p-3 bg-white frost border-b border-gray-200">
         <button
           onClick={onReset}
           className="text-gray-500 text-sm px-3 py-1.5 rounded active:bg-gray-100"
