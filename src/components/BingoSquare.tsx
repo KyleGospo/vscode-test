@@ -22,7 +22,7 @@ export function BingoSquare({ square, isWinning, onClick }: BingoSquareProps) {
     <button
       onClick={onClick}
       disabled={square.isFreeSpace}
-      className={`${baseClasses} ${stateClasses} ${freeSpaceClasses}`}
+      className={`${baseClasses} ${stateClasses} ${freeSpaceClasses} frost`}
       aria-pressed={square.isMarked}
       aria-label={square.isFreeSpace ? 'Free space' : square.text}
     >
