@@ -33,11 +33,9 @@ body {
 @layer components {
   .frost {
     @apply 
-      rounded-xl
-      bg-[rgba(255,255,255,0.6)]
+      opacity-60
       backdrop-blur-[20px]
-      backdrop-saturate-[1.8]
-      shadow-lg;
+      backdrop-saturate-[1.8];
 
     /* ensure Safari and older browsers support */
     backdrop-filter: blur(20px) saturate(1.8);
