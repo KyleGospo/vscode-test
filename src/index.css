@@ -53,3 +53,27 @@ body {
     @apply bg-[rgba(255,255,255,0.45)];
   }
 }
+
+/* Smooth pastel gradient animation */
+@layer base {
+  body {
+    background: linear-gradient(120deg,
+      #ffd6e8,   /* pastel pink */
+      #d6e8ff,   /* pastel blue */
+      #e8ffd6,   /* pastel green */
+      #ffe8d6,   /* pastel peach */
+      #f2d6ff    /* pastel purple */
+    );
+    background-size: 400% 400%;
+    animation: pastel-cycle 25s ease-in-out infinite;
+  }
+
+  @keyframes pastel-cycle {
+    0%   { background-position: 0% 50%; }
+    25%  { background-position: 50% 50%; }
+    50%  { background-position: 100% 50%; }
+    75%  { background-position: 50% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+}
+
