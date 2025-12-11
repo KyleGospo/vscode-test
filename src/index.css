@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 
+/* Import Google Font: Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
 @theme {
   --color-accent: #2563eb;
   --color-accent-light: #3b82f6;
@@ -54,6 +57,10 @@ body {
 
 /* Smooth pastel gradient animation */
 @layer base {
+  html {
+    font-family: 'Lato', sans-serif;
+  }
+
   body {
     background: linear-gradient(120deg,
       #ffd6e8,   /* pastel pink */
