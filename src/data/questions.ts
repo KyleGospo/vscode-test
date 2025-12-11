@@ -1,4 +1,8 @@
 export const questions: string[] = [
+  "Has been to Redmond",
+  "Used Windows 95",
+  "Actually worked with Clippy",
+  "Made something in the Garage",
   "Has a desk plant",
   "Has taken a cooking class",
   "Knows how to code",
